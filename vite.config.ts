@@ -4,8 +4,9 @@ import react from '@vitejs/plugin-react';
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/CTES-CHILE/', // IMPORTANTE: Debe coincidir con el nombre de tu repositorio en GitHub
+  base: './', // Cambiado a './' para que funcione independientemente de la subcarpeta de GitHub Pages
   build: {
     outDir: 'dist',
+    emptyOutDir: true
   }
 });
